@@ -1,0 +1,501 @@
+:root {
+--red: #D11917;
+--blue: #155FCF;
+--black: #312D2D;
+--white: #FFE7E2;
+}
+
+body {
+  margin: 0;
+  height: auto;
+  object-fit: contain;
+}
+
+.grid {
+  margin: 0% 0%;
+  position: relative;
+  width: 100%;
+  height: 100vw;
+}
+
+/* 1 линия */
+.box1 {
+  display: inline-block;
+  height: 11.6%;
+  width: 100%;
+  margin-top: -2%;
+  vertical-align: top;
+  background-color: var(--white);
+}
+
+/* блок с рычагом */
+.block2 {
+  width: 38.2%;
+  margin-left: -6%;
+  margin-top: 4%;
+  height: 61%;
+  position: absolute;
+  display: inline-block;
+  object-fit: contain;
+  overflow: hidden;
+  vertical-align: top;
+  z-index:1;
+  background: url(img/lever.png);
+}
+
+.circle {
+width: 20%;
+height: 6%;
+margin-top: -27%;
+background: var(--blue);
+border-radius: 50%;
+animation: color 4s infinite linear;
+}
+
+@keyframes color {
+  0% {color: var(--red;)}
+  50% {color:var(--blue;)}
+  100% {color: var(--red;)}
+}
+
+
+.b2 {
+    margin-left:1%;
+  animation: b2 .4s infinite steps(7);
+  /* background-color: red; */
+}
+
+@keyframes b2 {
+  0% {background-position: 0% top;}
+  16% {background-position: -38.2% top;}
+  32% {background-position: -76.4% top;}
+  48% {background-position: -114.6% top;}
+  64% {background-position: -152.8% top;}
+  80% {background-position: -191% top;}
+  100% {background-position: -229.2% top;}
+}
+
+
+
+/* блок с рукой */
+.block1 {
+  width: 46%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  background-color: var(--black);
+  vertical-align: top;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.b1 {
+    margin-top: 6%;
+    margin-left: -14%;
+    position: absolute;
+    animation: b1 1.5s alternate linear infinite;
+    transition: 1s;
+
+  }
+
+  @keyframes b1 {
+    0% {left: 1%};
+    50% {left:-35%}
+    100% {left:-40%};
+    }
+
+
+/* блок часы */
+.block3 {
+  width: 28.95%;
+  height: 100%;
+  margin-left: -16%;
+  position: relative;
+  display: inline-block;
+  float:right;
+  background-color: var(--blue);
+}
+
+.b3 {
+  margin-top: 4%;
+  margin-left: 9%;
+  position: absolute;
+}
+
+
+
+
+/* 2 линия */
+.box2 {
+  display: inline-block;
+  height: 6%;
+  width: 100%;
+  vertical-align: top;
+  background-color: var(--red);
+}
+
+.block4 {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-top:2%;
+}
+
+.b4 {
+  animation: b4 3.5s infinite linear;
+}
+
+.b4:after {
+  content: img class="b4" src="img/nesudba.png";
+}
+
+@keyframes b4 {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-25.5%);}
+}
+
+
+
+/* 3 линия */
+.box3 {
+  display: inline-block;
+  height: 30.6%;
+  width: 100%;
+  vertical-align: top;
+}
+
+.block5 {
+  width: 34%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  background-color: var(--blue);
+  vertical-align: top;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.block6 {
+  width: 29%;
+  height: 67.9%;
+  margin-left: -0.2%;
+  position: relative;
+  display: inline-block;
+  background-color: var(--white);
+  vertical-align: top;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.box9 {
+  display: inline-block;
+  height: 100%;
+  margin-left: -0.2%;
+  width: 36.8%;
+  vertical-align: top;
+  background-color: var(--white);
+}
+
+/* анимация с ховером */
+.block7 {
+  width: 101%;
+  height: 28%;
+  position: relative;
+  display: inline-block;
+  background-color: var(--white);
+  vertical-align: top;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.block21 {
+ width: 100%;
+ height: 72.3%;
+ margin-left: 15%;
+ position: relative;
+ display: inline-block;
+ vertical-align: top;
+ overflow: hidden;
+ object-fit: contain;
+ z-index: 101;
+}
+
+.b21 {
+  margin-top: 2%;
+}
+
+.b21:hover
+
+.block8 {
+ width: 100%;
+ height: 72.3%;
+ margin-left: 1.3%;
+ margin-top: -129%;
+ position: relative;
+ display: inline-block;
+ background-color: var(--white);
+ vertical-align: top;
+ overflow: hidden;
+ object-fit: contain;
+}
+
+
+
+
+/* 4 линия */
+.box4 {
+  display: inline-block;
+  height: 19.2%;
+  width: 100%;
+  vertical-align: top;
+  background-color: var(--red);
+  margin-top: -21%;
+}
+
+.block9 {
+  margin-top: 3%;
+  margin-left: 2%;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.block19 {
+  width: 33%;
+  height: 50%;
+  margin-top: 21%;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.b19 {
+  margin-top: -22%;
+  animation: b19 4s infinite linear;
+}
+
+.b19:after {
+  content: img class="b19" src="img/name.png";
+}
+
+@keyframes b19 {
+  0% {transform: translateX(-50%);}
+  100% {transform: translateX(-14%);}
+}
+
+
+
+
+
+
+/* 5 линия */
+.box5 {
+  display: inline-block;
+  height: 46.6%;
+  width: 100%;
+  margin-top: -6%;
+  vertical-align: top;
+}
+
+.box6 {
+  display: inline-block;
+  height: 94%;
+  width: 39%;
+  vertical-align: top;
+  margin-top: 6%;
+  background-color: var(--black);
+}
+
+.block10 {
+  width: 100%;
+  height: 27.7%;
+  margin-top: -0.5%;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.block20{
+margin-top:-66.5%;
+}
+
+.b10:hover {
+  animation: b10 1s infinite ;
+}
+
+@keyframes b10 {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
+
+.block11 {
+  width: 100%;
+  height: 29%;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  object-fit: contain;
+  background-color: var(--white);
+}
+
+.b11 {
+  margin-top: -21%;
+  margin-left: -5%;
+}
+
+
+.box7 {
+  display: inline-block;
+  height: 94%;
+  width: 27%;
+  vertical-align: top;
+  margin-top: 6%;
+  margin-left: -0.5%;
+  background-color: white;
+}
+
+.box8 {
+  display: inline-block;
+  height: 94%;
+  width: 34.25%;
+  vertical-align: top;
+  margin-top: 6%;
+  margin-left: -0.3%;
+}
+
+/* 1 строка */
+.block14 {
+  width: 100%;
+  height: 22%;
+  position: relative;
+  display: inline-block;
+  background-color: var(--black);
+  vertical-align: top;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.b14 {
+  animation: b15 2s infinite linear;
+}
+
+.b14:after {
+  content: img class="b14" src="img/name.png";
+}
+
+@keyframes b14 {
+  0% {transform: translateX(0%);}
+  100% {transform: translateX(-50%);}
+}
+
+/* 2 строка */
+.block15 {
+  width: 100%;
+  height: 22%;
+  position: relative;
+  display: inline-block;
+  background-color: var(--black);
+  vertical-align: top;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.b15 {
+  animation: b15 5s infinite linear;
+}
+
+.b15:after {
+  content: img class="b15" src="img/name.png";
+}
+
+@keyframes b15 {
+  0% {transform: translateX(-51%);}
+  100% {transform: translateX(-0%);}
+}
+
+
+/* 3 строка */
+.block16 {
+  width: 100%;
+  height: 22%;
+  position: relative;
+  display: inline-block;
+  background-color: var(--black);
+  vertical-align: top;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.b16 {
+  animation: b16 3s infinite linear;
+}
+
+.b16:after {
+  content: img class="b16" src="img/line.png";
+}
+
+@keyframes b16 {
+  0% {transform: translateX(0%);}
+  100% {transform: translateX(-51%);}
+}
+
+/* 4 строка */
+.block17 {
+  width: 100%;
+  height: 22%;
+  position: relative;
+  display: inline-block;
+  background-color: var(--black);
+  vertical-align: top;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.b17 {
+  animation: b17 8s infinite linear;
+}
+
+.b17:after {
+  content: img class="b17" src="img/line.png";
+}
+
+@keyframes b17 {
+  0% {transform: translateX(0%);}
+  100% {transform: translateX(-51%);}
+}
+
+
+/* подвал */
+.block18 {
+  width: 100%;
+  height: 12%;
+  position: relative;
+  display: inline-block;
+  background-color: var(--red);
+  vertical-align: top;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.b18 {
+  margin-top: 8%;
+  animation: b18 3.5s infinite linear;
+}
+
+.b18:after {
+  content: img class="b18" src="img/name.png";
+}
+
+@keyframes b18 {
+  0% {transform: translateX(0%);}
+  100% {transform: translateX(-50%);}
+}
