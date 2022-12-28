@@ -6,13 +6,18 @@
 }
 
 body {
+  width: 1470px;
+  background: white;
+  display: block;
+  position: relative;
   margin: 0;
   height: auto;
-  object-fit: contain;
+
 }
 
 .container, .box1 , .box2 , .box3 , .box4 , .box5  {
   margin: 0 auto;
+  overflow: hidden;
 }
 
 /* 1 линия */
@@ -66,32 +71,9 @@ body {
 }
 
 
-/* .circle {
-width: 20%;
-height: 6%;
-margin-top: -27%;
-background: var(--blue);
-border-radius: 50%;
-animation: color 4s infinite linear;
-} */
-
-
-
 .b2 {
     margin-left:1%;
-  /* animation: b2 .4s infinite steps(7);
-  /* background-color: red; */
 }
-
-/* @keyframes b2 {
-  0% {background-position: 0% top;}
-  16% {background-position: -38.2% top;}
-  32% {background-position: -76.4% top;}
-  48% {background-position: -114.6% top;}
-  64% {background-position: -152.8% top;}
-  80% {background-position: -191% top;}
-  100% {background-position: -229.2% top;}
-} */
 
 
 
@@ -310,10 +292,12 @@ animation: color 4s infinite linear;
       }
   }
 
-  .block37 {
-    margin-top: -121.2%;
-    margin-left: 98.6%;
+  .block38 {
+    transform: scaleX(-1);
+    margin-top: -120.2%;
+    margin-left: 110.6%;
   }
+
 
   .circle {
     width: 30%;

@@ -1,33 +1,221 @@
-@media (min-width:1441px) and (max-width:1920px) {
+@media (min-width:1471px) and (max-width:1920px) {
+  body {
+    width: 1920px;
+    background: white;
+    display: block;
+    height:4154px;
+    margin: 0 auto;
+    position: relative;
+    object-fit: contain;
+  }
+
+  /* рычаг */
+    .block2 {
+      width: 30%;
+      margin-left: -9%;
+      margin-top: 4%;
+      height: 30%;
+    }
+
+    .block29 {
+      width: 30%;
+      margin-left: -9%;
+      margin-top: 4%;
+      height: 30%;
+    }
+
+    .b29 {
+      height:25%;
+      margin-left:1%;
+    }
+
+    .b2 {
+      height:25%;
+     margin-left:1%;
+    }
+
+    .b3 {
+      height:85%;
+      margin-top: 10%;
+      margin-left: 7%;
+      position: absolute;
+    }
+
+    .b1 {
+   height:60%;
+   margin-top: 10%;
+   margin-left: -14%;
+   animation: b1 1.5s alternate linear infinite;
+   transition: 1s;
+
+ }
+
+ @keyframes b1 {
+   0% {left: 10%};
+   50% {left:-55%}
+   100% {left:-30%};
+   }
+
+   .block4 {
+   margin-top:-4%;
+   height:170%;
+ }
+
+ .b23,  .b24,  .b25,  .b26,  .b27,  .b28 {
+   height: 43%;
+   margin-top: -6% ;
+   margin-left: -1%;
+ }
+
+ .b9 {
+   height: 85%;
+   margin-top:-2%  ;
+   margin-left:% ;
+   }
+
+.b19 {
+  height: 130%;
+  margin-top: -10%;
+}
+
+.b21 {
+  height: 80%;
+}
+
+.b8, .b12, .b14, .b15, .b16, .b17 {
+  height: 100%;
+}
+
+.b11 {
+  height: 160%;
+}
+
+.b10 {
+  height:100%;
+  margin-top:-0.2%;
+}
+
+.b20 {
+  height:27.6%;
+  margin-left: 0.3%;
+}
+
+.b18 {
+  height: 50%;
+}
+
+.b13, .b30 {
+  height: 110%;
+}
+
+.b37{
+  height:35%;
+}
+.block38 {
+  height:20%;
+  margin-left:-1%
+}
+
+.b38 {
+  margin-left:-11.6%;
+  margin-top:-7%;
+  height:120%;
+}
+
+.b31, .b32, .b33, .b34, .b35, .b36 {
+  height:80%;
+}
 
 }
 
 
-@media (min-width:1281px) and (max-width:1440px) {
 
 
+
+
+
+
+/* все супер не трогаем */
+@media (min-width:1281px) and (max-width:1470px) {
+  body {
+    width: 1470px;
+    background: white;
+    display: block;
+    height:3183px;
+    margin: 0 auto;
+    position: relative;
+    object-fit: contain;
+  }
 }
 
 @media (min-width:1025px) and (max-width:1280px) {
-
+  body {
+    width: 1280px;
+    background: white;
+    display: block;
+    height:2770px;
+    margin: 0 auto;
+    position: relative;
+    object-fit: contain;
+  }
 }
 
 @media (min-width:835px) and (max-width:1024px) {
-
+  body {
+    width: 1024px;
+    background: white;
+    display: block;
+    height:2214px;
+    margin: 0 auto;
+    position: relative;
+    object-fit: contain;
+  }
 }
 
 @media (min-width:745px) and (max-width:834px) {
-
+  body {
+    width: 834px;
+    background: white;
+    display: block;
+    height:1804px;
+    margin: 0 auto;
+    position: relative;
+    object-fit: contain;
+  }
 }
 
 @media (min-width:415px) and (max-width:744px) {
-
+  body {
+    width: 744px;
+    background: white;
+    display: block;
+    height:1611px;
+    margin: 0 auto;
+    position: relative;
+    object-fit: contain;
+  }
 }
 
 @media (min-width:321px) and (max-width:414px) {
-
+  body {
+    width: 414px;
+    background: white;
+    display: block;
+    height:1716px;
+    margin: 0 auto;
+    position: relative;
+    object-fit: contain;
+  }
 }
 
 @media (min-width:1px) and (max-width:320px) {
-
+  body {
+    width: 320px;
+    background: white;
+    display: block;
+    height:1330px;
+    margin: 0 auto;
+    position: relative;
+    object-fit: contain;
+  }
 }
