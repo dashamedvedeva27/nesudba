@@ -1,0 +1,834 @@
+:root {
+--red: #D11917;
+--blue: #155FCF;
+--black: #312D2D;
+--white: #FFE7E2;
+}
+
+body {
+  width: 1470px;
+  background: white;
+  display: block;
+  position: relative;
+  margin: 0;
+  height: auto;
+
+}
+
+.container, .box1 , .box2 , .box3 , .box4 , .box5  {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* 1 линия */
+.box1 {
+  display: inline-block;
+  height: 11.6%;
+  width: 100%;
+  margin-top: -2%;
+  vertical-align: top;
+  background-color: var(--white);
+}
+
+/* блок с рычагом */
+.block2 {
+  width: 38.2%;
+  margin-left: -6%;
+  margin-top: 4%;
+  height: 61%;
+  position: absolute;
+  display: inline-block;
+  object-fit: contain;
+  overflow: hidden;
+  vertical-align: top;
+  z-index:1;
+  background: url(img/lever.png);
+}
+
+.block29 {
+  width: 38.2%;
+  margin-left: -5.6%;
+  margin-top: 4%;
+  height: 61%;
+  position: absolute;
+  display: inline-block;
+  object-fit: contain;
+  overflow: hidden;
+  vertical-align: top;
+  z-index:1;
+  background: url(img/lever.png);
+}
+
+.b29 {
+  animation: b29 0.1s infinite;
+  animation-duration: 6s;
+}
+
+@keyframes b29 {
+0% {opacity:1;}
+50% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+
+.b2 {
+    margin-left:1%;
+}
+
+
+
+/* блок с рукой */
+.block1 {
+  width: 46%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  background-color: var(--black);
+  vertical-align: top;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.b1 {
+    margin-top: 6%;
+    margin-left: -14%;
+    position: absolute;
+    animation: b1 1.5s alternate linear infinite;
+    transition: 1s;
+
+  }
+
+  @keyframes b1 {
+    0% {left: 1%};
+    50% {left:-35%}
+    100% {left:-40%};
+    }
+
+
+/* блок часы */
+.block3 {
+  width: 28.95%;
+  height: 100%;
+  margin-left: -16%;
+  position: relative;
+  display: inline-block;
+  float:right;
+  background-color: var(--blue);
+}
+
+.b3 {
+  margin-top: 4%;
+  margin-left: 9%;
+  position: absolute;
+}
+
+
+
+
+/* 2 линия */
+.box2 {
+  display: inline-block;
+  height: 6%;
+  width: 100%;
+  vertical-align: top;
+  background-color: var(--red);
+}
+
+.block4 {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-top:2%;
+}
+
+.b4 {
+  animation: b4 3.5s infinite linear;
+}
+
+.b4:after {
+  content: img class="b4" src="img/nesudba.png";
+}
+
+@keyframes b4 {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-25.5%);}
+}
+
+
+
+/* 3 линия */
+.box3 {
+  display: inline-block;
+  height: 30.6%;
+  width: 100%;
+  vertical-align: top;
+}
+
+/* анимация дрожение */
+.block5 {
+  width: 34%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  background-color: var(--blue);
+  vertical-align: top;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.block23 {
+  margin-left: 10%;
+  margin-top: -3%;
+}
+.b23 {
+  animation: b23  1s ease-in-out 0s normal none infinite running;
+  }
+  @keyframes b23 {
+      0%, 50%, 100% {
+          transform: rotate(0deg);
+      }
+      10%, 30% {
+          transform: rotate(-10deg);
+      }
+      20%, 40% {
+          transform: rotate(10deg);
+      }
+  }
+
+
+.block24 {
+  margin-left: 43%;
+  margin-top: -75%;
+}
+.b24 {
+  animation: b24  3s ease-in-out 0s normal none infinite running;
+  }
+  @keyframes b24 {
+      0%, 50%, 100% {
+          transform: rotate(0deg);
+      }
+      10%, 30% {
+          transform: rotate(-10deg);
+      }
+      20%, 40% {
+          transform: rotate(10deg);
+      }
+  }
+
+
+.block25 {
+  margin-left: 80%;
+  margin-top: -70%;
+ }
+.b25 {
+  animation: b25  2s ease-in-out 0s normal none infinite running;
+  }
+  @keyframes b25 {
+      0%, 50%, 100% {
+          transform: rotate(0deg);
+      }
+      10%, 30% {
+          transform: rotate(-10deg);
+      }
+      20%, 40% {
+          transform: rotate(10deg);
+      }
+  }
+
+.block26 {
+  margin-left: 80%;
+  margin-top: 45%;
+ }
+ .b26 {
+  animation: b26  1.5s ease-in-out 0s normal none infinite running;
+  }
+  @keyframes b26 {
+      0%, 50%, 100% {
+          transform: rotate(0deg);
+      }
+      10%, 30% {
+          transform: rotate(-10deg);
+      }
+      20%, 40% {
+          transform: rotate(10deg);
+      }
+  }
+
+.block27 {
+  margin-left: 45%;
+  margin-top: -85%;
+  }
+  .b27 {
+  animation: b27  1.2s ease-in-out 0s normal none infinite running;
+  }
+  @keyframes b27 {
+      0%, 50%, 100% {
+          transform: rotate(0deg);
+      }
+      10%, 30% {
+          transform: rotate(-10deg);
+      }
+      20%, 40% {
+          transform: rotate(10deg);
+      }
+  }
+
+.block28 {
+  margin-left: 10%;
+  margin-top: -85%;
+  }
+  .b28 {
+  animation: b28  3s ease-in-out 0s normal none infinite running;
+  }
+  @keyframes b28 {
+      0%, 50%, 100% {
+          transform: rotate(0deg);
+      }
+      10%, 30% {
+          transform: rotate(-10deg);
+      }
+      20%, 40% {
+          transform: rotate(10deg);
+      }
+  }
+
+  .block38 {
+    transform: scaleX(-1);
+    margin-top: -120.2%;
+    margin-left: 110.6%;
+  }
+
+
+  .circle {
+    width: 30%;
+    height: 15%;
+    margin-top: 180%;
+    position: relative;
+    background: var(--red);
+    border-radius: 50%;
+    animation: circle 1.5s linear infinite;
+    animation-delay: 1.5s;
+    }
+
+    @keyframes circle {
+    0% {top: -110%; left: 94%;}
+    50% {top: -115%; left: 40%;}
+    100% {top: -120%; left: -40%;}
+    }
+
+
+/* мяч летит */
+.block6 {
+  width: 29%;
+  height: 68.2%;
+  margin-left: -0.2%;
+  position: relative;
+  display: inline-block;
+  background-color: var(--white);
+  vertical-align: top;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.b37{
+  transform: scaleX(-1);
+  margin-top: 97%;
+  margin-left: -2%;
+}
+
+.circle1 {
+  width: 33%;
+  height: 22%;
+  margin-top: 20%;
+  position: relative;
+  background: var(--red);
+  border-radius: 50%;
+  animation: circle1 1.5s linear infinite;
+  }
+
+  @keyframes circle1 {
+  0% {top: -100%; left: 100%;}
+  25% {top: -85%; left: 70%;}
+  50% {top: -70%; left: 50%;}
+  75% {top: -55%; left; 30%;}
+  100% {top: -40%; left: 10%;}
+  }
+
+.box9 {
+  display: inline-block;
+  height: 100%;
+  margin-left: -0.2%;
+  width: 36.8%;
+  vertical-align: top;
+  background-color: var(--white);
+}
+
+/* анимация с ховером */
+.block7 {
+  width: 101%;
+  height: 28%;
+  margin-left: -0.1%;
+  position: relative;
+  display: inline-block;
+  background-color: var(--white);
+  vertical-align: top;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.b31 {
+  margin-top: 4%;
+  margin-left: 3%;
+  animation: b31 4s infinite;
+}
+
+@keyframes b31 {
+  0% {transform: scaleX(1);}
+  50% {transform: scaleX(-1);}
+  100% {transform: scaleX(1);}
+}
+
+.b32 {
+  margin-top: -40%;
+  margin-left: 19%;
+  animation: b32 2s infinite;
+}
+
+@keyframes b32 {
+  0% {transform: scaleX(1);}
+  50% {transform: scaleX(-1);}
+  100% {transform: scaleX(1);}
+}
+
+.b33 {
+  transform: scaleX(-1);
+  margin-top: -40%;
+  margin-left: 35%;
+  animation: b33 5s infinite;
+  }
+
+  @keyframes b33 {
+  0% {transform: scaleX(-1);}
+  50% {transform: scaleX(1);}
+  100% {transform: scaleX(-1);}
+}
+
+.b34 {
+  transform: scaleX(-1);
+  margin-top: -40%;
+  margin-left: 52%;
+  animation: b34 2s infinite;
+  }
+
+  @keyframes b34 {
+  0% {transform: scaleX(-1);}
+  50% {transform: scaleX(1);}
+  100% {transform: scaleX(-1);}
+}
+
+.b35 {
+  margin-top: -40%;
+  margin-left: 69%;
+  animation: b35 5s infinite;
+  }
+
+  @keyframes b35 {
+  0% {transform: scaleX(1);}
+  50% {transform: scaleX(-1);}
+  100% {transform: scaleX(1);}
+  }
+
+.b36 {
+  transform: scaleX(-1);
+  margin-top: -40%;
+  margin-left: 85%;
+  animation: b36 4s infinite;
+  }
+
+  @keyframes b36 {
+  0% {transform: scaleX(-1);}
+  50% {transform: scaleX(1);}
+  100% {transform: scaleX(-1);}
+}
+
+
+
+
+
+
+.block21 {
+ width: 100%;
+ height: 72.3%;
+ margin-left: 15%;
+ position: relative;
+ display: inline-block;
+ vertical-align: top;
+ overflow: hidden;
+ object-fit: contain;
+ z-index: 101;
+}
+
+.b21 {
+  margin-top: 2%;
+}
+
+
+.block8 {
+ width: 100%;
+ height: 72.3%;
+ margin-left: 1.3%;
+ margin-top: -129%;
+ position: relative;
+ display: inline-block;
+vertical-align: top;
+ overflow: hidden;
+ object-fit: contain;
+}
+
+
+
+
+/* 4 линия */
+.box4 {
+  display: inline-block;
+  height: 19.2%;
+  width: 100%;
+  vertical-align: top;
+  background-color: var(--red);
+  margin-top: -21%;
+}
+
+/* анимация с полем */
+.block9 {
+  margin-top: 3%;
+  margin-left: 2%;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.b22 {
+margin-top: -35.1%;
+margin-left: 2%;
+}
+
+.b22:hover {
+  animation: b22 1s infinite ;
+}
+
+@keyframes b22 {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
+
+.block19 {
+  width: 33%;
+  height: 50%;
+  margin-top: 21%;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.b19 {
+  margin-top: -22%;
+  animation: b19 4s infinite linear;
+}
+
+.b19:after {
+  content: img class="b19" src="img/name.png";
+}
+
+@keyframes b19 {
+  0% {transform: translateX(-50%);}
+  100% {transform: translateX(-19%);}
+}
+
+
+
+
+
+
+/* 5 линия */
+.box5 {
+  display: inline-block;
+  height: 46.6%;
+  width: 100%;
+  margin-top: -6%;
+  vertical-align: top;
+}
+
+/* первый столбец */
+.box6 {
+  display: inline-block;
+  height: 94%;
+  width: 39%;
+  vertical-align: top;
+  margin-top: 6%;
+  background-color: var(--black);
+}
+
+/* много точек */
+.block10 {
+  width: 100%;
+  height: 27.7%;
+  margin-top: -0.5%;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.block20{
+margin-top:-67.4%;
+}
+
+.b10:hover {
+  animation: b10 1s infinite ;
+}
+
+@keyframes b10 {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
+
+/* кнопки */
+.block11 {
+  width: 100%;
+  height: 29%;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  object-fit: contain;
+  background-color: var(--white);
+}
+
+.b11 {
+  margin-top: -21%;
+  margin-left: -5%;
+}
+
+/* рука тянет */
+.block12 {
+  width: 100%;
+  height: 44%;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  object-fit: contain;
+  background-color: var(--red);
+}
+
+.b12 {
+  position: absolute;
+  margin-left: -2%;
+  animation: b12 1s alternate linear infinite;
+  transition: 1s;
+}
+
+@keyframes b12 {
+  0% {left: 1%};
+  50% {left:-3%}
+  100% {left:-15%};
+  }
+
+/* много строк */
+  .box8 {
+    display: inline-block;
+    float:right;
+    height: 94%;
+    width: 34.25%;
+    vertical-align: top;
+    margin-top: 6%;
+    margin-left: -0.3%;
+  }
+
+  /* 1 строка */
+  .block14 {
+    width: 100%;
+    height: 22%;
+    position: relative;
+    display: inline-block;
+    background-color: var(--black);
+    vertical-align: top;
+    overflow: hidden;
+    object-fit: contain;
+  }
+
+  .b14 {
+    animation: b15 2s infinite linear;
+  }
+
+  .b14:after {
+    content: img class="b14" src="img/name.png";
+  }
+
+  @keyframes b14 {
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(-50%);}
+  }
+
+  /* 2 строка */
+  .block15 {
+    width: 100%;
+    height: 22%;
+    position: relative;
+    display: inline-block;
+    background-color: var(--black);
+    vertical-align: top;
+    overflow: hidden;
+    object-fit: contain;
+  }
+
+  .b15 {
+    animation: b15 5s infinite linear;
+  }
+
+  .b15:after {
+    content: img class="b15" src="img/name.png";
+  }
+
+  @keyframes b15 {
+    0% {transform: translateX(-51%);}
+    100% {transform: translateX(-0%);}
+  }
+
+
+  /* 3 строка */
+  .block16 {
+    width: 100%;
+    height: 22%;
+    position: relative;
+    display: inline-block;
+    background-color: var(--black);
+    vertical-align: top;
+    overflow: hidden;
+    object-fit: contain;
+  }
+
+  .b16 {
+    animation: b16 3s infinite linear;
+  }
+
+  .b16:after {
+    content: img class="b16" src="img/line.png";
+  }
+
+  @keyframes b16 {
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(-51%);}
+  }
+
+  /* 4 строка */
+  .block17 {
+    width: 100%;
+    height: 22%;
+    position: relative;
+    display: inline-block;
+    background-color: var(--black);
+    vertical-align: top;
+    overflow: hidden;
+    object-fit: contain;
+  }
+
+  .b17 {
+    animation: b17 8s infinite linear;
+  }
+
+  .b17:after {
+    content: img class="b17" src="img/line.png";
+  }
+
+  @keyframes b17 {
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(-51%);}
+  }
+
+
+  /* подвал */
+  .block18 {
+    width: 100%;
+    height: 12%;
+    position: relative;
+    display: inline-block;
+    background-color: var(--red);
+    vertical-align: top;
+    overflow: hidden;
+    object-fit: contain;
+  }
+
+  .b18 {
+    margin-top: 8%;
+    animation: b18 3.5s infinite linear;
+  }
+
+  .b18:after {
+    content: img class="b18" src="img/name.png";
+  }
+
+  @keyframes b18 {
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(-50%);}
+  }
+
+
+/* рука с нитками */
+.box7 {
+  display: inline-block;
+  height: 94%;
+  width: 27%;
+  vertical-align: top;
+  margin-top: 6%;
+  margin-left: -0.5%;
+}
+
+.b30{
+  margin-top: -379%;
+  margin-left: 10%;
+  animation: b30  2s ease-in-out 0s normal none infinite running;
+  }
+
+  @keyframes b30 {
+      0%, 50%, 100% {
+          transform: rotate(0deg);
+      }
+      10%, 30% {
+          transform: rotate(-1.5deg);
+      }
+      20%, 40% {
+          transform: rotate(1.5deg);
+      }
+  }
+
+.block13 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--blue);
+}
+
+.b13 {
+  margin-left: -10%;
+  animation: b13  2s ease-in-out 0s normal none infinite running;
+  }
+
+  @keyframes b13 {
+      0%, 50%, 100% {
+          transform: rotate(0deg);
+      }
+      10%, 30% {
+          transform: rotate(-0.5deg);
+      }
+      20%, 40% {
+          transform: rotate(0.5deg);
+      }
+  }
