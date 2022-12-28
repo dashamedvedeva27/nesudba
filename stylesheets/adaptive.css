@@ -1,4 +1,5 @@
-@media (min-width:1471px) and (max-width:1920px) {
+@media only screen and (min-width:1471px) and (max-width:1920px) {
+
   body {
     width: 1920px;
     background: white;
@@ -9,7 +10,6 @@
     object-fit: contain;
   }
 
-  /* рычаг */
     .block2 {
       width: 30%;
       margin-left: -9%;
@@ -136,7 +136,7 @@
 
 
 /* все супер не трогаем */
-@media (min-width:1281px) and (max-width:1470px) {
+@media only screen and (min-width:1025px) and (max-width:1470px) {
   body {
     width: 1470px;
     background: white;
@@ -148,72 +148,64 @@
   }
 }
 
-@media (min-width:1025px) and (max-width:1280px) {
+
+@media only screen and (min-width:835px) and (max-width:1024px) {
   body {
-    width: 1280px;
+    width: 1470px;
     background: white;
     display: block;
-    height:2770px;
+    height:3183px;
     margin: 0 auto;
     position: relative;
     object-fit: contain;
   }
 }
 
-@media (min-width:835px) and (max-width:1024px) {
+@media only screen and (min-width:745px) and (max-width:834px) {
   body {
-    width: 1024px;
+    width: 1470px;
     background: white;
     display: block;
-    height:2214px;
+    height:3183px;
     margin: 0 auto;
     position: relative;
     object-fit: contain;
   }
 }
 
-@media (min-width:745px) and (max-width:834px) {
+@media only screen and (min-width:415px) and (max-width:744px) {
   body {
-    width: 834px;
+    width: 1470px;
     background: white;
     display: block;
-    height:1804px;
+    height:3183px;
     margin: 0 auto;
     position: relative;
     object-fit: contain;
   }
 }
 
-@media (min-width:415px) and (max-width:744px) {
+@media only screen and (min-width:321px) and (max-width:414px) {
   body {
-    width: 744px;
+    width: 1470px;
     background: white;
     display: block;
-    height:1611px;
+    height:3183px;
     margin: 0 auto;
     position: relative;
     object-fit: contain;
   }
+
+
+
 }
 
-@media (min-width:321px) and (max-width:414px) {
+@media only screen and (max-width:320px) {
   body {
-    width: 414px;
+    width: 1470px;
     background: white;
     display: block;
-    height:1716px;
-    margin: 0 auto;
-    position: relative;
-    object-fit: contain;
-  }
-}
-
-@media (min-width:1px) and (max-width:320px) {
-  body {
-    width: 320px;
-    background: white;
-    display: block;
-    height:1330px;
+    height:3183px;
     margin: 0 auto;
     position: relative;
     object-fit: contain;
