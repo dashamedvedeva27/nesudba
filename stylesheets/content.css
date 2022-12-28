@@ -6,16 +6,24 @@
 }
 
 body {
-  margin: 0;
-  height: auto;
+  width: 100%;
+  background: white;
+  display: block;
+  height:100vw;
+  margin: 0 auto;
+  position: relative;
   object-fit: contain;
 }
 
-.grid {
-  margin: 0% 0%;
-  position: relative;
-  width: 100%;
-  height: 100vw;
+.container {
+  width: 1470px;
+  background: white;
+  display: block;
+  height:3183px;
+}
+
+.container, .box1 , .box2 , .box3 , .box4 , .box5  {
+  margin: 0 auto;
 }
 
 /* 1 линия */
@@ -43,29 +51,50 @@ body {
   background: url(img/lever.png);
 }
 
-.circle {
+.block29 {
+  width: 38.2%;
+  margin-left: -5.6%;
+  margin-top: 4%;
+  height: 61%;
+  position: absolute;
+  display: inline-block;
+  object-fit: contain;
+  overflow: hidden;
+  vertical-align: top;
+  z-index:1;
+  background: url(img/lever.png);
+}
+
+.b29 {
+  animation: b29 0.1s infinite;
+  animation-duration: 6s;
+}
+
+@keyframes b29 {
+0% {opacity:1;}
+50% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+
+/* .circle {
 width: 20%;
 height: 6%;
 margin-top: -27%;
 background: var(--blue);
 border-radius: 50%;
 animation: color 4s infinite linear;
-}
+} */
 
-@keyframes color {
-  0% {color: var(--red;)}
-  50% {color:var(--blue;)}
-  100% {color: var(--red;)}
-}
 
 
 .b2 {
     margin-left:1%;
-  animation: b2 .4s infinite steps(7);
+  /* animation: b2 .4s infinite steps(7);
   /* background-color: red; */
 }
 
-@keyframes b2 {
+/* @keyframes b2 {
   0% {background-position: 0% top;}
   16% {background-position: -38.2% top;}
   32% {background-position: -76.4% top;}
@@ -73,7 +102,7 @@ animation: color 4s infinite linear;
   64% {background-position: -152.8% top;}
   80% {background-position: -191% top;}
   100% {background-position: -229.2% top;}
-}
+} */
 
 
 
@@ -164,6 +193,7 @@ animation: color 4s infinite linear;
   vertical-align: top;
 }
 
+/* анимация дрожение */
 .block5 {
   width: 34%;
   height: 100%;
@@ -175,9 +205,149 @@ animation: color 4s infinite linear;
   object-fit: contain;
 }
 
+.block23 {
+  margin-left: 10%;
+  margin-top: -3%;
+}
+.b23 {
+  animation: b23  1s ease-in-out 0s normal none infinite running;
+  }
+  @keyframes b23 {
+      0%, 50%, 100% {
+          transform: rotate(0deg);
+      }
+      10%, 30% {
+          transform: rotate(-10deg);
+      }
+      20%, 40% {
+          transform: rotate(10deg);
+      }
+  }
+
+
+.block24 {
+  margin-left: 43%;
+  margin-top: -75%;
+}
+.b24 {
+  animation: b24  3s ease-in-out 0s normal none infinite running;
+  }
+  @keyframes b24 {
+      0%, 50%, 100% {
+          transform: rotate(0deg);
+      }
+      10%, 30% {
+          transform: rotate(-10deg);
+      }
+      20%, 40% {
+          transform: rotate(10deg);
+      }
+  }
+
+
+.block25 {
+  margin-left: 80%;
+  margin-top: -70%;
+ }
+.b25 {
+  animation: b25  2s ease-in-out 0s normal none infinite running;
+  }
+  @keyframes b25 {
+      0%, 50%, 100% {
+          transform: rotate(0deg);
+      }
+      10%, 30% {
+          transform: rotate(-10deg);
+      }
+      20%, 40% {
+          transform: rotate(10deg);
+      }
+  }
+
+.block26 {
+  margin-left: 80%;
+  margin-top: 45%;
+ }
+ .b26 {
+  animation: b26  1.5s ease-in-out 0s normal none infinite running;
+  }
+  @keyframes b26 {
+      0%, 50%, 100% {
+          transform: rotate(0deg);
+      }
+      10%, 30% {
+          transform: rotate(-10deg);
+      }
+      20%, 40% {
+          transform: rotate(10deg);
+      }
+  }
+
+.block27 {
+  margin-left: 45%;
+  margin-top: -85%;
+  }
+  .b27 {
+  animation: b27  1.2s ease-in-out 0s normal none infinite running;
+  }
+  @keyframes b27 {
+      0%, 50%, 100% {
+          transform: rotate(0deg);
+      }
+      10%, 30% {
+          transform: rotate(-10deg);
+      }
+      20%, 40% {
+          transform: rotate(10deg);
+      }
+  }
+
+.block28 {
+  margin-left: 10%;
+  margin-top: -85%;
+  }
+  .b28 {
+  animation: b28  3s ease-in-out 0s normal none infinite running;
+  }
+  @keyframes b28 {
+      0%, 50%, 100% {
+          transform: rotate(0deg);
+      }
+      10%, 30% {
+          transform: rotate(-10deg);
+      }
+      20%, 40% {
+          transform: rotate(10deg);
+      }
+  }
+
+  .block37 {
+    margin-top: -121.2%;
+    margin-left: 98.6%;
+  }
+
+  .circle {
+    width: 30%;
+    height: 15%;
+    margin-top: 180%;
+    position: relative;
+    background: var(--red);
+    border-radius: 50%;
+    animation: circle 1.5s linear infinite;
+    animation-delay: 1.5s;
+    }
+
+    @keyframes circle {
+    0% {top: -110%; left: 94%;}
+    50% {top: -115%; left: 40%;}
+    100% {top: -120%; left: -40%;}
+    }
+
+
+/* мяч летит */
 .block6 {
   width: 29%;
-  height: 67.9%;
+  height: 68.2%;
   margin-left: -0.2%;
   position: relative;
   display: inline-block;
@@ -186,6 +356,30 @@ animation: color 4s infinite linear;
   overflow: hidden;
   object-fit: contain;
 }
+
+.b37{
+  transform: scaleX(-1);
+  margin-top: 97%;
+  margin-left: -2%;
+}
+
+.circle1 {
+  width: 33%;
+  height: 22%;
+  margin-top: 20%;
+  position: relative;
+  background: var(--red);
+  border-radius: 50%;
+  animation: circle1 1.5s linear infinite;
+  }
+
+  @keyframes circle1 {
+  0% {top: -100%; left: 100%;}
+  25% {top: -85%; left: 70%;}
+  50% {top: -70%; left: 50%;}
+  75% {top: -55%; left; 30%;}
+  100% {top: -40%; left: 10%;}
+  }
 
 .box9 {
   display: inline-block;
@@ -200,6 +394,7 @@ animation: color 4s infinite linear;
 .block7 {
   width: 101%;
   height: 28%;
+  margin-left: -0.1%;
   position: relative;
   display: inline-block;
   background-color: var(--white);
@@ -207,6 +402,86 @@ animation: color 4s infinite linear;
   overflow: hidden;
   object-fit: contain;
 }
+
+.b31 {
+  margin-top: 4%;
+  margin-left: 3%;
+  animation: b31 4s infinite;
+}
+
+@keyframes b31 {
+  0% {transform: scaleX(1);}
+  50% {transform: scaleX(-1);}
+  100% {transform: scaleX(1);}
+}
+
+.b32 {
+  margin-top: -40%;
+  margin-left: 19%;
+  animation: b32 2s infinite;
+}
+
+@keyframes b32 {
+  0% {transform: scaleX(1);}
+  50% {transform: scaleX(-1);}
+  100% {transform: scaleX(1);}
+}
+
+.b33 {
+  transform: scaleX(-1);
+  margin-top: -40%;
+  margin-left: 35%;
+  animation: b33 5s infinite;
+  }
+
+  @keyframes b33 {
+  0% {transform: scaleX(-1);}
+  50% {transform: scaleX(1);}
+  100% {transform: scaleX(-1);}
+}
+
+.b34 {
+  transform: scaleX(-1);
+  margin-top: -40%;
+  margin-left: 52%;
+  animation: b34 2s infinite;
+  }
+
+  @keyframes b34 {
+  0% {transform: scaleX(-1);}
+  50% {transform: scaleX(1);}
+  100% {transform: scaleX(-1);}
+}
+
+.b35 {
+  margin-top: -40%;
+  margin-left: 69%;
+  animation: b35 5s infinite;
+  }
+
+  @keyframes b35 {
+  0% {transform: scaleX(1);}
+  50% {transform: scaleX(-1);}
+  100% {transform: scaleX(1);}
+  }
+
+.b36 {
+  transform: scaleX(-1);
+  margin-top: -40%;
+  margin-left: 85%;
+  animation: b36 4s infinite;
+  }
+
+  @keyframes b36 {
+  0% {transform: scaleX(-1);}
+  50% {transform: scaleX(1);}
+  100% {transform: scaleX(-1);}
+}
+
+
+
+
+
 
 .block21 {
  width: 100%;
@@ -232,8 +507,7 @@ animation: color 4s infinite linear;
  margin-top: -129%;
  position: relative;
  display: inline-block;
- background-color: var(--white);
- vertical-align: top;
+vertical-align: top;
  overflow: hidden;
  object-fit: contain;
 }
@@ -251,6 +525,7 @@ animation: color 4s infinite linear;
   margin-top: -21%;
 }
 
+/* анимация с полем */
 .block9 {
   margin-top: 3%;
   margin-left: 2%;
@@ -260,6 +535,20 @@ animation: color 4s infinite linear;
   float: left;
   overflow: hidden;
   object-fit: contain;
+}
+
+.b22 {
+margin-top: -35.1%;
+margin-left: 2%;
+}
+
+.b22:hover {
+  animation: b22 1s infinite ;
+}
+
+@keyframes b22 {
+  0% {opacity:1;}
+  100% {opacity:0;}
 }
 
 .block19 {
@@ -285,7 +574,7 @@ animation: color 4s infinite linear;
 
 @keyframes b19 {
   0% {transform: translateX(-50%);}
-  100% {transform: translateX(-14%);}
+  100% {transform: translateX(-19%);}
 }
 
 
@@ -302,6 +591,7 @@ animation: color 4s infinite linear;
   vertical-align: top;
 }
 
+/* первый столбец */
 .box6 {
   display: inline-block;
   height: 94%;
@@ -311,6 +601,7 @@ animation: color 4s infinite linear;
   background-color: var(--black);
 }
 
+/* много точек */
 .block10 {
   width: 100%;
   height: 27.7%;
@@ -323,7 +614,7 @@ animation: color 4s infinite linear;
 }
 
 .block20{
-margin-top:-66.5%;
+margin-top:-67.4%;
 }
 
 .b10:hover {
@@ -335,6 +626,7 @@ margin-top:-66.5%;
   100% {opacity:0;}
 }
 
+/* кнопки */
 .block11 {
   width: 100%;
   height: 29%;
@@ -351,7 +643,172 @@ margin-top:-66.5%;
   margin-left: -5%;
 }
 
+/* рука тянет */
+.block12 {
+  width: 100%;
+  height: 44%;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  object-fit: contain;
+  background-color: var(--red);
+}
 
+.b12 {
+  position: absolute;
+  margin-left: -2%;
+  animation: b12 1s alternate linear infinite;
+  transition: 1s;
+}
+
+@keyframes b12 {
+  0% {left: 1%};
+  50% {left:-3%}
+  100% {left:-15%};
+  }
+
+/* много строк */
+  .box8 {
+    display: inline-block;
+    float:right;
+    height: 94%;
+    width: 34.25%;
+    vertical-align: top;
+    margin-top: 6%;
+    margin-left: -0.3%;
+  }
+
+  /* 1 строка */
+  .block14 {
+    width: 100%;
+    height: 22%;
+    position: relative;
+    display: inline-block;
+    background-color: var(--black);
+    vertical-align: top;
+    overflow: hidden;
+    object-fit: contain;
+  }
+
+  .b14 {
+    animation: b15 2s infinite linear;
+  }
+
+  .b14:after {
+    content: img class="b14" src="img/name.png";
+  }
+
+  @keyframes b14 {
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(-50%);}
+  }
+
+  /* 2 строка */
+  .block15 {
+    width: 100%;
+    height: 22%;
+    position: relative;
+    display: inline-block;
+    background-color: var(--black);
+    vertical-align: top;
+    overflow: hidden;
+    object-fit: contain;
+  }
+
+  .b15 {
+    animation: b15 5s infinite linear;
+  }
+
+  .b15:after {
+    content: img class="b15" src="img/name.png";
+  }
+
+  @keyframes b15 {
+    0% {transform: translateX(-51%);}
+    100% {transform: translateX(-0%);}
+  }
+
+
+  /* 3 строка */
+  .block16 {
+    width: 100%;
+    height: 22%;
+    position: relative;
+    display: inline-block;
+    background-color: var(--black);
+    vertical-align: top;
+    overflow: hidden;
+    object-fit: contain;
+  }
+
+  .b16 {
+    animation: b16 3s infinite linear;
+  }
+
+  .b16:after {
+    content: img class="b16" src="img/line.png";
+  }
+
+  @keyframes b16 {
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(-51%);}
+  }
+
+  /* 4 строка */
+  .block17 {
+    width: 100%;
+    height: 22%;
+    position: relative;
+    display: inline-block;
+    background-color: var(--black);
+    vertical-align: top;
+    overflow: hidden;
+    object-fit: contain;
+  }
+
+  .b17 {
+    animation: b17 8s infinite linear;
+  }
+
+  .b17:after {
+    content: img class="b17" src="img/line.png";
+  }
+
+  @keyframes b17 {
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(-51%);}
+  }
+
+
+  /* подвал */
+  .block18 {
+    width: 100%;
+    height: 12%;
+    position: relative;
+    display: inline-block;
+    background-color: var(--red);
+    vertical-align: top;
+    overflow: hidden;
+    object-fit: contain;
+  }
+
+  .b18 {
+    margin-top: 8%;
+    animation: b18 3.5s infinite linear;
+  }
+
+  .b18:after {
+    content: img class="b18" src="img/name.png";
+  }
+
+  @keyframes b18 {
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(-50%);}
+  }
+
+
+/* рука с нитками */
 .box7 {
   display: inline-block;
   height: 94%;
@@ -359,142 +816,46 @@ margin-top:-66.5%;
   vertical-align: top;
   margin-top: 6%;
   margin-left: -0.5%;
-  background-color: white;
 }
 
-.box8 {
-  display: inline-block;
-  height: 94%;
-  width: 34.25%;
-  vertical-align: top;
-  margin-top: 6%;
-  margin-left: -0.3%;
-}
+.b30{
+  margin-top: -379%;
+  margin-left: 10%;
+  animation: b30  2s ease-in-out 0s normal none infinite running;
+  }
 
-/* 1 строка */
-.block14 {
+  @keyframes b30 {
+      0%, 50%, 100% {
+          transform: rotate(0deg);
+      }
+      10%, 30% {
+          transform: rotate(-1.5deg);
+      }
+      20%, 40% {
+          transform: rotate(1.5deg);
+      }
+  }
+
+.block13 {
   width: 100%;
-  height: 22%;
-  position: relative;
-  display: inline-block;
-  background-color: var(--black);
-  vertical-align: top;
+  height: 100%;
   overflow: hidden;
-  object-fit: contain;
+  background-color: var(--blue);
 }
 
-.b14 {
-  animation: b15 2s infinite linear;
-}
+.b13 {
+  margin-left: -10%;
+  animation: b13  2s ease-in-out 0s normal none infinite running;
+  }
 
-.b14:after {
-  content: img class="b14" src="img/name.png";
-}
-
-@keyframes b14 {
-  0% {transform: translateX(0%);}
-  100% {transform: translateX(-50%);}
-}
-
-/* 2 строка */
-.block15 {
-  width: 100%;
-  height: 22%;
-  position: relative;
-  display: inline-block;
-  background-color: var(--black);
-  vertical-align: top;
-  overflow: hidden;
-  object-fit: contain;
-}
-
-.b15 {
-  animation: b15 5s infinite linear;
-}
-
-.b15:after {
-  content: img class="b15" src="img/name.png";
-}
-
-@keyframes b15 {
-  0% {transform: translateX(-51%);}
-  100% {transform: translateX(-0%);}
-}
-
-
-/* 3 строка */
-.block16 {
-  width: 100%;
-  height: 22%;
-  position: relative;
-  display: inline-block;
-  background-color: var(--black);
-  vertical-align: top;
-  overflow: hidden;
-  object-fit: contain;
-}
-
-.b16 {
-  animation: b16 3s infinite linear;
-}
-
-.b16:after {
-  content: img class="b16" src="img/line.png";
-}
-
-@keyframes b16 {
-  0% {transform: translateX(0%);}
-  100% {transform: translateX(-51%);}
-}
-
-/* 4 строка */
-.block17 {
-  width: 100%;
-  height: 22%;
-  position: relative;
-  display: inline-block;
-  background-color: var(--black);
-  vertical-align: top;
-  overflow: hidden;
-  object-fit: contain;
-}
-
-.b17 {
-  animation: b17 8s infinite linear;
-}
-
-.b17:after {
-  content: img class="b17" src="img/line.png";
-}
-
-@keyframes b17 {
-  0% {transform: translateX(0%);}
-  100% {transform: translateX(-51%);}
-}
-
-
-/* подвал */
-.block18 {
-  width: 100%;
-  height: 12%;
-  position: relative;
-  display: inline-block;
-  background-color: var(--red);
-  vertical-align: top;
-  overflow: hidden;
-  object-fit: contain;
-}
-
-.b18 {
-  margin-top: 8%;
-  animation: b18 3.5s infinite linear;
-}
-
-.b18:after {
-  content: img class="b18" src="img/name.png";
-}
-
-@keyframes b18 {
-  0% {transform: translateX(0%);}
-  100% {transform: translateX(-50%);}
-}
+  @keyframes b13 {
+      0%, 50%, 100% {
+          transform: rotate(0deg);
+      }
+      10%, 30% {
+          transform: rotate(-0.5deg);
+      }
+      20%, 40% {
+          transform: rotate(0.5deg);
+      }
+  }
