@@ -6,20 +6,9 @@
 }
 
 body {
-  width: 100%;
-  background: white;
-  display: block;
-  height:100vw;
-  margin: 0 auto;
-  position: relative;
+  margin: 0;
+  height: auto;
   object-fit: contain;
-}
-
-.container {
-  width: 1470px;
-  background: white;
-  display: block;
-  height:3183px;
 }
 
 .container, .box1 , .box2 , .box3 , .box4 , .box5  {
