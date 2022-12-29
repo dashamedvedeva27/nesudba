@@ -99,9 +99,8 @@ body {
   }
 
   @keyframes b1 {
-    0% {left: 1%};
-    50% {left:-35%}
-    100% {left:-40%};
+    0% {left: 1%;}
+    100% {left:-40%;}
     }
 
 
@@ -117,8 +116,9 @@ body {
 }
 
 .b3 {
-  margin-top: 4%;
-  margin-left: 9%;
+  height: 90%;
+  margin-top: 7%;
+  margin-left: 14%;
   position: absolute;
 }
 
